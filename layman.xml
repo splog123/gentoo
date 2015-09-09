@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <layman>
-  <overlay type="git" src="https://github.com/isplog123/splog-gentoo.git" contact="splog" name="splog">
+  <overlay type="git" src="https://github.com/splog123/splog-gentoo.git" contact="splog" name="splog">
     <link>https://github.com/splog123/splog-gentoo</link>
     <description>splog's personal Gentoo overlay</description>
   </overlay>
