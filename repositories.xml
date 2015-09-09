@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE repositories SYSTEM "/dtd/repositories.dtd">
+<repositories version="1.0">
+  <repo quality="testing" status="unofficial">
+    <name>splog-gentoo</name>
+    <description lang="en">splog's personal Gentoo overlay</description>
+    <homepage>https://github.com/splog123/splog-gentoo</homepage>
+    <owner>
+      <email>splog</email>
+      <name>splog</name>
+    </owner>
+    <source type="git">https://github.com/splog123/splog-gentoo.git</source>
+    <source type="git">git://github.com/splog123/splog-gentoo.git</source>
+  </repo>
+</repositories>
+
