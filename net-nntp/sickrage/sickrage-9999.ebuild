@@ -10,7 +10,7 @@ EGIT_REPO_URI="https://github.com/SiCKRAGETV/SickRage.git"
 
 inherit eutils user git-2 python-any-r1
 
-DESCRIPTION="SickRage - Searches TheTVDB and TVRage for shows"
+DESCRIPTION="SickRage - Searches TheTVDB for TV shows"
 HOMEPAGE="http://www.sickrage.tv/"
 
 LICENSE="GPL-3" # only
