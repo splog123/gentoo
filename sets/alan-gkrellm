@@ -1,0 +1,40 @@
+app-admin/gkrellm:2
+media-plugins/gkrellmpc
+x11-plugins/gkrellaclock:2
+x11-plugins/gkrellfire
+x11-plugins/gkrellm-bluez
+x11-plugins/gkrellm-leds:2
+x11-plugins/gkrellm-trayicons
+x11-plugins/gkrellm-volume:2
+x11-plugins/gkrellm-xkb
+x11-plugins/gkrellmss
+x11-plugins/gkrellsun
+x11-plugins/gkrelltop
+x11-plugins/gkrellweather:2
+x11-plugins/gkrellm-bgchanger:2
+x11-plugins/gkrellm-mailwatch:2
+x11-plugins/gkrellmwireless:2
+
+# Masked as it's Apple specific
+#app-laptop/gkrellm-pmu
+# Masked as it segfaults if /dev/radio is not present (according to package.mask)
+#x11-plugins/gkrellm-radio
+# Masked as it's Vaio-specific
+#x11-plugins/gkrellm-vaiobright
+# Pointless. There are better ways to take screenshots.
+#x11-plugins/gkrellshoot:2
+# I really don't need this
+#x11-plugins/gkrellstock:2
+# Masked as it's Dell Inspiron & Latitude specific
+#x11-plugins/i8krellm
+# 3 x fails to build with gcc 4.7
+#x11-plugins/gkrellflynn
+#x11-plugins/gkrellkam
+#x11-plugins/gkrellmlaunch:2
+# I never change the theme
+#x11-themes/gkrellm-themes
+# pointless, I never use it, needs imlib
+#x11-plugins/gkrellmoon:2
+# Masked as cpufreq* has been dead for years
+#x11-plugins/gkrellm-cpufreq
+
