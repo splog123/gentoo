@@ -28,7 +28,7 @@ dev-util/ltrace
 dev-util/perf
 dev-util/smem
 dev-util/strace
-dev-vcs/rcs
+dev-vcs/git
 media-sound/alsa-tools
 net-analyzer/iftop
 net-analyzer/netcat6
