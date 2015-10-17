@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python2_6 python2_7 )
 
 EGIT_REPO_URI="https://github.com/SiCKRAGETV/SickRage.git"
 
-inherit eutils user git-2 python-any-r1
+inherit eutils user git-2 python-r1
 
 DESCRIPTION="SickRage - Searches TheTVDB for TV shows"
 HOMEPAGE="http://www.sickrage.tv/"
