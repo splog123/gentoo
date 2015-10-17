@@ -9,7 +9,7 @@ PYTHON_USE_WITH="sqlite"
 
 EGIT_REPO_URI="https://github.com/midgetspy/Sick-Beard.git"
 
-inherit eutils user git-2 python
+inherit eutils user git-2 python-r1
 
 DESCRIPTION="Automatic TV-Series downloader for SABnzbd"
 HOMEPAGE="https://github.com/midgetspy/Sick-Beard#readme"
