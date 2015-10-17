@@ -4,13 +4,11 @@
 
 EAPI="5"
 
-PYTHON_COMPAT=(python2_6 python2_7)
-PYTHON_DEPEND="2:2.6"
-PYTHON_USE_WITH="sqlite"
+PYTHON_COMPAT=(python2_7)
+
+inherit eutils user git-2 python-single-r1
 
 EGIT_REPO_URI="https://github.com/rembo10/headphones.git"
-
-inherit eutils user git-2 python-r1
 
 DESCRIPTION="Automatic music downloader for SABnzbd"
 HOMEPAGE="https://github.com/rembo10/headphones#readme"
@@ -21,9 +19,7 @@ KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 pkg_setup() {
-	# Control PYTHON_USE_WITH
-	python_set_active_version 2
-	python_pkg_setup
+	python_single-r1_pkg_setup
 
 	# Create headphones group
 	enewgroup ${PN}
@@ -72,8 +68,6 @@ pkg_postinst() {
 	   rm -Rf "/usr/share/${PN}/.git"
 	fi
 
-	python_mod_optimize /usr/share/${PN}
-
 	elog "Headphones has been installed with data directories in /var/${PN}"
 	elog
 	elog "New user/group ${PN}/${PN} has been created"
@@ -88,6 +82,3 @@ pkg_postinst() {
 	elog
 }
 
-pkg_postrm() {
-	python_mod_cleanup /usr/share/${PN}
-}

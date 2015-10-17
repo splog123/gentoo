@@ -4,11 +4,11 @@
 
 EAPI=5
 
-PYTHON_COMPAT=( python2_6 python2_7 )
+PYTHON_COMPAT=(python2_7 )
+
+inherit eutils user git-2 python-single-r1
 
 EGIT_REPO_URI="https://github.com/SiCKRAGETV/SickRage.git"
-
-inherit eutils user git-2 python-r1
 
 DESCRIPTION="SickRage - Searches TheTVDB for TV shows"
 HOMEPAGE="http://www.sickrage.tv/"
@@ -18,13 +18,14 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
 
-DEPEND="${PTYHON_DEPS}"
 RDEPEND="
-	dev-python/cheetah
+	dev-python/cheetah[${PYTHON_USEDEP}]
 "
+DEPEND="${RDEPEND}"
+REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
 pkg_setup() {
-	python-any-r1_pkg_setup
+	python-single-r1_pkg_setup
 
 	# Create sickrage group
 	enewgroup ${PN}

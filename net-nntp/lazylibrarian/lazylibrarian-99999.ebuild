@@ -4,11 +4,11 @@
 
 EAPI="5"
 
-PYTHON_COMPAT=(python2_6 python2_7)
+PYTHON_COMPAT=(python2_7)
+
+inherit eutils user git-2 python-single-r1
 
 EGIT_REPO_URI="https://github.com/DobyTang/LazyLibrarian.git"
-
-inherit eutils user git-2 python-r1
 
 DESCRIPTION="LazyLibrarian is an automated book downloader for SABnzbd."
 HOMEPAGE="http://github.com/DobyTang/LazyLibrarian"
@@ -69,9 +69,6 @@ pkg_postinst() {
 	   rm -Rf "/usr/share/${PN}/.git"
 	fi
 
-	# No longer needed in python-r1 eclass
-	#python_mod_optimize /usr/share/${PN}
-
 	elog "Headphones has been installed with data directories in /var/${PN}"
 	elog
 	elog "New user/group ${PN}/${PN} has been created"
@@ -86,7 +83,3 @@ pkg_postinst() {
 	elog
 }
 
-# No longer needed in python-r1 eclass
-#pkg_postrm() {
-#	python_mod_cleanup /usr/share/${PN}
-#}
