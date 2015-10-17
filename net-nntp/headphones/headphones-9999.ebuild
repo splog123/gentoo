@@ -2,8 +2,9 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=4
+EAPI="5"
 
+PYTHON_COMPAT=(python2_6 python2_7)
 PYTHON_DEPEND="2:2.6"
 PYTHON_USE_WITH="sqlite"
 
