@@ -15,6 +15,7 @@ app-misc/colordiff
 app-misc/figlet
 app-misc/screen
 app-misc/symlinks
+app-misc/tmux
 app-portage/conf-update
 app-portage/eix
 app-portage/elogv
