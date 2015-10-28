@@ -1,6 +1,7 @@
 app-admin/apg
 app-admin/checkrestart
 app-admin/logrotate
+app-admin/mcelog
 app-admin/sudo
 app-arch/cabextract
 app-arch/cpio
