@@ -7,7 +7,7 @@ HOMEPAGE="http://dev.mysql.com/doc/"
 SRC_URI="http://downloads.mysql.com/docs/refman-${PV}-en.html-chapter.tar.gz"
 
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="x86 amd64"
 IUSE=""
 
 DEPEND=""
