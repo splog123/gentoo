@@ -6,7 +6,6 @@ app-admin/sudo
 app-arch/cabextract
 app-arch/cpio
 app-arch/sharutils
-app-crypt/johntheripper
 app-crypt/openssl-blacklist
 app-crypt/openvpn-blacklist
 app-doc/mysql-refman
