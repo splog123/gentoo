@@ -60,7 +60,7 @@ src_install() {
 	echo ${last_commit} > version.txt
 
 	insinto /usr/share/${PN}
-	doins -r autoProcessTV contrib gui lib runscripts sickbeard sickrage tests tornado SickBeard.py 
+	doins -r contrib gui lib runscripts sickbeard sickrage tests SickBeard.py 
 
 	fowners -R ${PN}:${PN} /usr/share/${PN}
 }
