@@ -27,5 +27,5 @@ src_install() {
 	doexe "${MY_PN}"
 	make_wrapper "${PN}" "/opt/${PN}/${MY_PN}"
 	make_desktop_entry "${PN}" "${MY_PN} Desktop" "/usr/share/pixmaps/${PN}.png" "" "MimeType=application/x-xdg-protocol-tg;x-scheme-handler/tg;"
-	newicon "${FILESDIR}/${P}.png" "${PN}.png"
+	newicon "${FILESDIR}/${MY_PN}.png" "${PN}.png"
 }
