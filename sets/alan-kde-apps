@@ -36,3 +36,6 @@ kde-apps/kwrite
 kde-apps/nsplugins
 kde-apps/plasma-runtime
 kde-apps/solid-runtime
+
+kde-frameworks/kmediaplayer
+
