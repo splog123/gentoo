@@ -1,5 +1,13 @@
+app-admin/system-config-printer
+
+kde-apps/ark
 kde-apps/baloo-widgets
 kde-apps/dolphin
+kde-apps/filelight
+kde-apps/gwenview
+kde-apps/kcalc
+kde-apps/kcharselect
+kde-apps/kcolorchooser
 kde-apps/kde-base-artwork
 kde-apps/kde-wallpapers
 kde-apps/kdebase-data
@@ -19,6 +27,7 @@ kde-apps/kiconfinder
 kde-apps/kimgio
 kde-apps/kmimetypefinder
 kde-apps/knetattach
+kde-apps/kdenetwork-filesharing
 kde-apps/knewstuff
 kde-apps/knotify
 kde-apps/konq-plugins
@@ -26,16 +35,23 @@ kde-apps/konqueror
 kde-apps/konsole
 kde-apps/kpasswdserver
 kde-apps/kquitapp
+kde-apps/ksnapshot
 kde-apps/kstart
 kde-apps/ktimezoned
 kde-apps/ktraderclient
 kde-apps/kuiserver
 kde-apps/kurifilter-plugins
 kde-apps/kuser
+kde-apps/kwalletmanager
 kde-apps/kwrite
 kde-apps/nsplugins
+kde-apps/okular
 kde-apps/plasma-runtime
+kde-apps/print-manager
 kde-apps/solid-runtime
+kde-apps/zeroconf-ioslave
 
+kde-frameworks/kimageformats
 kde-frameworks/kmediaplayer
+kde-frameworks/modemmanager-qt
 
