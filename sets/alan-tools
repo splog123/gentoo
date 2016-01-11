@@ -39,7 +39,6 @@ net-analyzer/tcpdump
 net-analyzer/tcptraceroute
 net-analyzer/traceroute
 net-dns/bind-tools
-net-dns/host
 net-fs/nfs-utils
 net-misc/dhcping
 net-misc/keychain
