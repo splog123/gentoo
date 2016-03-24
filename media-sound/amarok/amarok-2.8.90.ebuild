@@ -14,8 +14,6 @@ VIRTUALX_REQUIRED="test"
 VIRTUALDBUS_TEST="true"
 inherit flag-o-matic kde4-base pax-utils
 
-http://download.kde.org/stable/amarok/2.8.90/src/amarok-2.8.90.tar.xz.mirrorlist
-
 DESCRIPTION="Advanced audio player based on KDE framework"
 HOMEPAGE="https://amarok.kde.org/"
 SRC_URI="mirror://kde/stable/${PN}/${PV}/src/${P}.tar.xz"
