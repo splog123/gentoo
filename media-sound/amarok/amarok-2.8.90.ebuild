@@ -70,9 +70,9 @@ RDEPEND="${COMMONDEPEND}
 		$(add_kdeapps_dep phonon-kde) )
 "
 
+#	"${FILESDIR}/${P}-gmock-1.7.patch"
+#	"${FILESDIR}/${P}-mysqld-rpath.patch"
 PATCHES=(
-	"${FILESDIR}/${P}-gmock-1.7.patch"
-	"${FILESDIR}/${P}-mysqld-rpath.patch"
 	"${FILESDIR}/${P}-taglib110.patch"
 )
 
