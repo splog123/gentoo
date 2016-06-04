@@ -13,7 +13,6 @@ app-editors/nano
 app-editors/vim
 app-misc/colordiff
 app-misc/figlet
-app-misc/screen
 app-misc/symlinks
 app-misc/tmux
 app-portage/conf-update
