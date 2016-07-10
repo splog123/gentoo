@@ -21,7 +21,9 @@ DEPEND="${PYTHON_DEPS}
 		virtual/jpeg:*
 		media-libs/freetype
 		sys-libs/zlib
-		media-libs/libpng:*"
+		media-libs/libpng:*
+		dev-python/psutil
+       "
 RDEPEND="${DEPEND}"
 
 MY_PN="htpcmanager"
