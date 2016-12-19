@@ -19,7 +19,6 @@ kde-apps/keditbookmarks
 kde-apps/keditfiletype
 kde-apps/kfile
 kde-apps/kfind
-kde-apps/kfmclient
 kde-apps/kglobalaccel
 kde-apps/kiconfinder
 kde-apps/kimgio
@@ -29,7 +28,6 @@ kde-apps/knetattach
 kde-apps/kdenetwork-filesharing
 kde-apps/knewstuff
 kde-apps/knotify
-kde-apps/konq-plugins
 kde-apps/konqueror
 kde-apps/konsole
 kde-apps/kpasswdserver
@@ -41,7 +39,6 @@ kde-apps/kuiserver
 kde-apps/kurifilter-plugins
 kde-apps/kwalletmanager
 kde-apps/kwrite
-kde-apps/nsplugins
 kde-apps/okular
 kde-apps/plasma-runtime
 kde-apps/print-manager
