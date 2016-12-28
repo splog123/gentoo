@@ -62,6 +62,7 @@ sys-fs/reiserfsprogs
 sys-fs/sysfsutils
 sys-kernel/linux-firmware
 sys-power/powertop
+sys-process/at
 sys-process/atop
 sys-process/htop
 sys-process/iotop
