@@ -1,7 +1,8 @@
 net-misc/minidlna
 net-nntp/couchpotato
 net-nntp/headphones
-net-nntp/HTPC-Manager
+# HTPC-Manager is really useless and unmaintained
+#net-nntp/HTPC-Manager
 net-nntp/lazylibrarian
 net-nntp/mylar
 net-nntp/nzbget
