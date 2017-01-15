@@ -18,6 +18,12 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
 
+RDEPEND="
+        dev-python/cherrypy[${PYTHON_USEDEP}]
+        dev-python/mako[${PYTHON_USEDEP}]
+		"
+		DEPEND="${RDEPEND}"
+
 pkg_setup() {
 	# Create mylar group
 	enewgroup ${PN}
