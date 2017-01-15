@@ -69,7 +69,7 @@ pkg_postinst() {
 	   rm -Rf "/usr/share/${PN}/.git"
 	fi
 
-	elog "Headphones has been installed with data directories in /var/${PN}"
+	elog "LazyLibrarian has been installed with data directories in /var/${PN}"
 	elog
 	elog "New user/group ${PN}/${PN} has been created"
 	elog
@@ -78,7 +78,7 @@ pkg_postinst() {
 	elog "Please configure /etc/conf.d/${PN} before starting as daemon!"
 	elog
 	elog "Start with ${ROOT}etc/init.d/${PN} start"
-	elog "Visit http://<host ip>:8181 to configure Headphones"
+	elog "Visit http://<host ip>:8181 to configure LazyLibrarian"
 	elog "Default web username/password : lazylibrarian/secret"
 	elog
 }
