@@ -25,4 +25,9 @@ kde-frameworks/modemmanager-qt
 
 kde-plasma/plasma-workspace-wallpapers
 
+# Multimedia. Too much of kdemultimedia-meta is stuck on KDE4
+app-cdr/k3b
+kde-apps/kmix
+media-sound/amarok
 media-sound/kaudiocreator
+
