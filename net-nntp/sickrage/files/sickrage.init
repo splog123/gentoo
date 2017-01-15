@@ -36,7 +36,7 @@ check_config() {
 start() {
 	check_config
 
-        ebegin "Starting SickBeard"
+        ebegin "Starting SickRage"
         start-stop-daemon --start --pidfile ${pidfile} -u ${USER} -g ${GROUP}\
 	--exec ${bin} ${program} -- \
 	--daemon --pidfile ${pidfile} --datadir ${var_dir} --nolaunch --config ${CONFIG_FILE} --port ${PORT}
@@ -44,7 +44,7 @@ start() {
 }
 
 stop() {
-        ebegin "Stopping SickBeard"
+        ebegin "Stopping SickRage"
         start-stop-daemon --stop --pidfile ${pidfile} --retry 15
         eend $?
 }
