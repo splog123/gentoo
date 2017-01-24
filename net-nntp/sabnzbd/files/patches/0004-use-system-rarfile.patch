@@ -38,7 +38,7 @@ index c573435..dcb2859 100644
  import bz2
  import threading
  
-+from rarfile import is_rarfile, RarFile
++from rarfile import RarFile, is_rarfile
 +
  import sabnzbd
  from sabnzbd.constants import SCAN_FILE_NAME, VALID_ARCHIVES
