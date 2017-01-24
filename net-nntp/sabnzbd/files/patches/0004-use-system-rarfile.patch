@@ -26,7 +26,7 @@ index 7c69c68..0789540 100644
  from sabnzbd.articlecache import ArticleCache
  from sabnzbd.postproc import PostProcessor
  import sabnzbd.downloader
--from sabnzbd.utils.rarfile import RarFile, is_rarfile
+-import sabnzbd.utils.rarfile as rarfile
  from sabnzbd.encoding import unicoder, is_utf8
  from sabnzbd.rating import Rating
  
@@ -42,7 +42,7 @@ index c573435..dcb2859 100644
 +
  import sabnzbd
  from sabnzbd.constants import SCAN_FILE_NAME, VALID_ARCHIVES
--from sabnzbd.utils.rarfile import is_rarfile, RarFile
+-import sabnzbd.utils.rarfile as rarfile
  from sabnzbd.encoding import platform_encode
  from sabnzbd.newsunpack import is_sevenfile, SevenZip
  import sabnzbd.nzbstuff as nzbstuff
@@ -59,7 +59,7 @@ index 7f223d9..b7fbd4f 100644
  import sabnzbd
  from sabnzbd.encoding import TRANS, UNTRANS, unicode2local, \
      reliable_unpack_names, unicoder, platform_encode, deunicode
--from sabnzbd.utils.rarfile import RarFile, is_rarfile
+-import sabnzbd.utils.rarfile as rarfile
  from sabnzbd.misc import format_time_string, find_on_path, make_script_path, int_conv, \
      flag_file, real_path, globber, globber_full, short_path
  from sabnzbd.tvsort import SeriesSorter
