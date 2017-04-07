@@ -1,13 +1,9 @@
 net-misc/minidlna
 net-nntp/couchpotato
 net-nntp/headphones
-# HTPC-Manager is really useless and unmaintained
-#net-nntp/HTPC-Manager
 net-nntp/lazylibrarian
 net-nntp/mylar
-net-nntp/nzbget
 net-nntp/sabnzbd
 net-nntp/sickrage
 net-p2p/transmission
-#www-apps/musicbrainz-server
 
