@@ -7,3 +7,6 @@ net-nntp/sabnzbd
 net-nntp/sickrage
 net-p2p/transmission
 
+# mpd neds this specific slot of libupnp
+media-sound/mpd
+net-libs/libupnp:0
