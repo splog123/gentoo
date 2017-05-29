@@ -1,5 +1,4 @@
 app-admin/apg
-app-admin/checkrestart
 app-admin/needrestart
 app-admin/logrotate
 app-admin/mcelog
