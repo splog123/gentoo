@@ -1,31 +1,30 @@
-app-admin/system-config-printer
-
-kde-apps/ark
-kde-apps/baloo-widgets
+# Individual wanted apps from kdecore-meta
 kde-apps/dolphin
-kde-apps/filelight
+kde-apps/konsole
+kde-apps/konqueror
+kde-apps/kwrite
+
+# Individual wanted apps from kdegraphics-meta:
 kde-apps/gwenview
+kde-apps/okular
+kde-apps/spectacle
+
+# Individual wanted apps from kdemultimedia-meta
+kde-apps/k3b
+media-sound/amarok
+
+# Individual wanted apps from kdeutils-meta:
+kde-apps/ark
 kde-apps/kcalc
 kde-apps/kcharselect
-kde-apps/kcolorchooser
-kde-apps/keditbookmarks
-kde-apps/kfind
-kde-apps/kleopatra
-kde-apps/kdenetwork-filesharing
-kde-apps/konqueror
-kde-apps/konsole
 kde-apps/kwalletmanager
-kde-apps/kwrite
-kde-apps/okular
 kde-apps/print-manager
 
+
+app-admin/system-config-printer
+kde-apps/baloo-widgets
 kde-frameworks/kimageformats
 kde-frameworks/kmediaplayer
 kde-frameworks/modemmanager-qt
-
 kde-plasma/plasma-workspace-wallpapers
-
-# Multimedia. Too much of kdemultimedia-meta is stuck on KDE4
-kde-apps/k3b
-media-sound/amarok
 

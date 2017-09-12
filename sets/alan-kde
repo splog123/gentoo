@@ -1,10 +1,20 @@
-kde-apps/kdeadmin-meta
 kde-apps/kdebase-meta
-kde-apps/kdegraphics-meta
-kde-apps/kdenetwork-meta
-kde-apps/kdeutils-meta
 kde-plasma/plasma-meta
+
+# This is only ksystemlogs and kcron. I use shell tools.
+#kde-apps/kdeadmin-meta
+
+# This has lots of stuff I don't use. Rather specify the apps in @alan-kde-apps
+#kde-apps/kdegraphics-meta
 
 # 20170115: Too many kde-multimedia apps are still stuck on KDE4 (amarok, juk, etc)
 # Rather specify the apps I do want in @alan-kde-apps
 #kde-kde-apps/kdemultimedia-meta
+
+# I actually don't use anything in this meta package
+#kde-apps/kdenetwork-meta
+
+# This includes kgpg, which pulls in akonadi and other unwanted crap.
+# Rather specify the apps in @alan-kde-apps
+#kde-apps/kdeutils-meta
+
