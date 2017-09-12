@@ -10,7 +10,7 @@ kde-apps/okular
 kde-apps/spectacle
 
 # Individual wanted apps from kdemultimedia-meta
-kde-apps/k3b
+#kde-apps/k3b
 #media-sound/amarok
 
 # Individual wanted apps from kdeutils-meta:
