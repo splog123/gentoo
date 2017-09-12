@@ -1,8 +1,0 @@
-app-admin/gkrellm:2
-x11-plugins/gkrellaclock:2
-x11-plugins/gkrellm-bluez
-x11-plugins/gkrellm-leds:2
-x11-plugins/gkrellm-trayicons
-x11-plugins/gkrellm-volume:2
-x11-plugins/gkrellmwireless:2
-
