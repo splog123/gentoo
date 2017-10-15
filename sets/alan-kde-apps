@@ -23,8 +23,6 @@ kde-apps/print-manager
 
 app-admin/system-config-printer
 kde-apps/baloo-widgets
-kde-frameworks/kimageformats
 kde-frameworks/kmediaplayer
-kde-frameworks/modemmanager-qt
 kde-plasma/plasma-workspace-wallpapers
 
