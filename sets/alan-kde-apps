@@ -20,9 +20,6 @@ kde-apps/kcharselect
 kde-apps/kwalletmanager
 kde-apps/print-manager
 
-
-app-admin/system-config-printer
-kde-apps/baloo-widgets
+# Individual wanted apps from no particular -meta package
 kde-frameworks/kmediaplayer
-kde-plasma/plasma-workspace-wallpapers
 
