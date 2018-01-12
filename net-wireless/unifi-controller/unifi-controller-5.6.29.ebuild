@@ -27,11 +27,11 @@ RDEPEND="${DEPEND}
 
 S=${WORKDIR}
 
-src_unpack() {
-	default_src_unpack
-	cd "${WORKDIR}" || die
-	unpack data.tar.xz && mv usr/lib/unifi "${S}" || die
-}
+#src_unpack() {
+#	default_src_unpack
+#	cd "${WORKDIR}" || die
+#	unpack data.tar.xz && mv usr/lib/unifi "${S}" || die
+#}
 
 src_prepare() {
 	local n="$S/lib/native"
