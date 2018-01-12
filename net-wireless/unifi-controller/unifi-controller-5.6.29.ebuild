@@ -6,7 +6,7 @@
 
 EAPI="5"
 
-inherit eutils
+inherit eutils unpacker
 
 DESCRIPTION="UniFi controller"
 HOMEPAGE="https://www.ubnt.com/download/unifi"
