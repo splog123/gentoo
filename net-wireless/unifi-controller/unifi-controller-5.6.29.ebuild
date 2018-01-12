@@ -25,6 +25,8 @@ RDEPEND="${DEPEND}
 		dev-java/icedtea-bin:8
 	)"
 
+S=${WORKDIR}
+
 src_unpack() {
 	default_src_unpack
 	cd "${WORKDIR}" || die
