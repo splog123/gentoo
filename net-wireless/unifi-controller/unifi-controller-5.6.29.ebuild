@@ -28,8 +28,7 @@ RDEPEND="${DEPEND}
 src_unpack() {
 	default_src_unpack
 	cd "${WORKDIR}" || die
-	#unpack ./unifi_sysvinit_all.tar.xz && mv usr/lib/unifi "${S}" || die
-	mv usr/lib/unifi "${S}" || die
+	unpack data.tar.xz && mv usr/lib/unifi "${S}" || die
 }
 
 src_prepare() {
