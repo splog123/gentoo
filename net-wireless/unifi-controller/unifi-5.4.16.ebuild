@@ -2,38 +2,41 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-# Shamelessly ripped from the "raw" overlay
+# Shamelessly ripped from the raw overlay
 
 EAPI="5"
 
-inherit eutils unpacker
+inherit eutils
 
-DESCRIPTION="UniFi controller"
+DESCRIPTION="Ubiquiti UniFi controller"
 HOMEPAGE="https://www.ubnt.com/download/unifi"
 
-SRC_URI="http://dl.ubnt.com/unifi/"${PV%_*}"/unifi_sysvinit_all.deb -> ${PN}-${PV}.deb"
+#SRC_URI="http://dl.ubnt.com/unifi/"${PV%_*}"/unifi_sysvinit_all.deb -> ${PN}-${PV}.deb"
+SRC_URI="https://dl.ubnt.com/unifi/"${PV%_*}"/UniFi.unix.zip -> ${PN}-${PV}.zip
+	https://dl.ubnt.com/unifi/"${PV%_*}"/unifi_sh_api -> unifi_sh_api-${PV}"
 
 SLOT="0"
 KEYWORDS="~amd64 ~arm"
-
-DEPEND=""
-RDEPEND="${DEPEND}
-	dev-db/mongodb
-	sys-libs/libcap
+RDEPEND="dev-db/mongodb
 	|| (
 		dev-java/icedtea:8[sunec]
 		dev-java/icedtea-bin:8
 	)"
 
-S=${WORKDIR}
-
 src_unpack() {
 	default_src_unpack
 	cd "${WORKDIR}" || die
-	unpacker data.tar.xz && mv usr/lib/unifi "${S}" || die
+	local f
+	for f in $A; do
+		case "$f" in
+		*.deb)          unpack ./data.tar.gz && mv usr/lib/unifi "${S}" || die;;
+		unifi_sh_api-*) cp "$DISTDIR/$f" "${S}/unifi_sh_api";;
+		*.zip)          mv UniFi "${S}" || die;;
+		esac
+	done
 }
 
-src_prepare() {
+src_prepare(){
 	local n="$S/lib/native"
 	if use amd64; then
 		rm "$n/Linux/armhf" -Rf
@@ -43,17 +46,17 @@ src_prepare() {
 	rm "$n/"{Mac,Windows} -Rf
 }
 
-src_install() {
+src_install(){
 	dodir /opt
 	mv "${S}" "${D}"/opt/UniFi || die
-	#rm "${D}"/opt/UniFi/bin/mongod
-	#exeinto /etc/unifi/bin
-	#doexe "${FILESDIR}"/mongod.sh
-	#dosym /etc/unifi/bin/mongod.sh /opt/UniFi/bin/mongod
+	rm "${D}"/opt/UniFi/bin/mongod
+	exeinto /etc/unifi/bin
+	doexe "${FILESDIR}"/mongod.sh
+	dosym /etc/unifi/bin/mongod.sh /opt/UniFi/bin/mongod
 	newinitd "${FILESDIR}/${PN}".init "${PN}"
 }
 
-pkg_postinst() {
+pkg_postinst(){
 	einfo 'Remember to use NSS-enabled java VM (dev-java/icedtea:8[sunec] is good),'
 	einfo 'then uncomment NSS security provider in ${java.home}/jre/lib/security/java.security:'
 	einfo 'security.provider.10=sun.security.pkcs11.SunPKCS11 ${java.home}/lib/security/nss.cfg'
