@@ -21,10 +21,10 @@ IUSE=""
 pkg_setup() {
 	python_single-r1_pkg_setup
 
-	# Create couchpotato group
-	enewgroup ${PN}
-	# Create couchpotato user, put in couchpotato group
-	enewuser ${PN} -1 -1 -1 ${PN}
+	# Create download group
+	enewgroup download 
+	# Create download user, put in download group
+	enewuser download -1 -1 -1 download
 }
 
 src_install() {
@@ -35,10 +35,10 @@ src_install() {
 
 	# Location of data files
 	keepdir /var/${PN}
-	fowners -R ${PN}:${PN} /var/${PN}
+	fowners -R download:download /var/${PN}
 
 	insinto /etc/${PN}
-	insopts -m0660 -o ${PN} -g ${PN}
+	insopts -m0660 -o download -g download
 	doins "${FILESDIR}/${PN}.ini"
 
 	# Rotation of log files
@@ -63,7 +63,7 @@ pkg_postinst() {
 
 	elog "Couchpotato has been installed with data directories in /var/${PN}"
 	elog
-	elog "New user/group ${PN}/${PN} has been created"
+	elog "New user/group download:download has been created"
 	elog
 	elog "Config file is located in /etc/${PN}/${PN}.ini"
 	elog "Note: Log files are located in /var/${PN}/logs"
@@ -72,7 +72,7 @@ pkg_postinst() {
 	elog
 	elog "Start with ${ROOT}etc/init.d/${PN} start"
 	elog "Visit http://<host ip>:5050 to configure Couchpotato"
-	elog "Default web username/password : couchpotato/secret"
+	elog "Default web username/password : download/secret"
 	elog
 }
 

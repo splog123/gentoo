@@ -4,5 +4,5 @@
 
 /var/log/headphones/*.log{
 	missingok
-	su headphones headphones
+	su download download
 }

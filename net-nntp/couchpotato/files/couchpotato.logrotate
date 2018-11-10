@@ -4,5 +4,5 @@
 
 /var/couchpotato/logs/*.log{
 	missingok
-	su couchpotato couchpotato
+	su download download
 }

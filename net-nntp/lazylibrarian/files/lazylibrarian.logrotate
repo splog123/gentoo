@@ -4,6 +4,6 @@
 
 /var/log/lazylibrarian/*.log{
         missingok
-        su lazylibrarian lazylibrarian
+        su download download
 }
 

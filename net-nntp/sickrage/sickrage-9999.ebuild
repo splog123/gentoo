@@ -27,10 +27,10 @@ REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 pkg_setup() {
 	python-single-r1_pkg_setup
 
-	# Create sickrage group
-	enewgroup ${PN}
-	# Create sickrage user, put in sickrage group
-	enewuser ${PN} -1 -1 -1 ${PN}
+	# Create download group
+	enewgroup download 
+	# Create download user, put in download group
+	enewuser download -1 -1 -1 download
 }
 
 src_install() {
@@ -41,13 +41,13 @@ src_install() {
 
 	# Location of log and data files
 	keepdir /var/${PN}
-	fowners -R ${PN}:${PN} /var/${PN}
+	fowners -R download:download /var/${PN}
 
 	keepdir /var/{${PN}/{cache,download},log/${PN}}
-	fowners -R ${PN}:${PN} /var/{${PN}/{cache,download},log/${PN}}
+	fowners -R download:download /var/{${PN}/{cache,download},log/${PN}}
 
 	insinto /etc/${PN}
-	insopts -m0660 -o ${PN} -g ${PN}
+	insopts -m0660 -o download -g download
 	doins "${FILESDIR}/${PN}.ini"
 
 	# Rotation of log files
@@ -62,7 +62,7 @@ src_install() {
 	insinto /usr/share/${PN}
 	doins -r runscripts sickrage tests
 
-	fowners -R ${PN}:${PN} /usr/share/${PN}
+	fowners -R download:download /usr/share/${PN}
 }
 
 pkg_postinst() {
@@ -78,7 +78,7 @@ pkg_postinst() {
 
 	elog "SickRage has been installed with data directories in /var/${PN}"
 	elog
-	elog "New user/group ${PN}/${PN} has been created"
+	elog "New user/group download/download has been created"
 	elog
 	elog "Config file is located in /etc/${PN}/${PN}.ini"
 	elog
@@ -86,6 +86,6 @@ pkg_postinst() {
 	elog
 	elog "Start with ${ROOT}etc/init.d/${PN} start"
 	elog "Visit http://<host ip>:8081 to configure SickRage"
-	elog "Default web username/password : sickrage/secret"
+	elog "Default web username/password : download/secret"
 	elog
 }

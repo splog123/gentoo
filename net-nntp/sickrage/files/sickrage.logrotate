@@ -4,5 +4,5 @@
 
 /var/log/sickrage/*.log{
 	missingok
-	su sickrage sickrage
+	su download download 
 }

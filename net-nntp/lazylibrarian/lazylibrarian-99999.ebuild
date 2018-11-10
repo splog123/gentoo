@@ -19,10 +19,10 @@ KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 pkg_setup() {
-	# Create lazylibrarian group
-	enewgroup ${PN}
-	# Create lazylibrarian user, put in lazylibrarian group
-	enewuser ${PN} -1 -1 -1 ${PN}
+	# Create download group
+	enewgroup download
+	# Create download user, put in download group
+	enewuser download -1 -1 -1 download
 }
 
 src_install() {
@@ -35,13 +35,13 @@ src_install() {
 	#epatch "${FILESDIR}/path.patch" || die
 	# Location of log and data files
 	keepdir /var/${PN}
-	fowners -R ${PN}:${PN} /var/${PN}
+	fowners -R download:download /var/${PN}
 
 	keepdir /var/{${PN}/{cache,download},log/${PN}}
-	fowners -R ${PN}:${PN} /var/{${PN}/{cache,download},log/${PN}}
+	fowners -R download:download /var/{${PN}/{cache,download},log/${PN}}
 
 	insinto /etc/${PN}
-	insopts -m0660 -o ${PN} -g ${PN}
+	insopts -m0660 -o download -g download
 	doins "${FILESDIR}/${PN}.ini"
 
 	# Rotation of log files
@@ -55,7 +55,7 @@ src_install() {
 
 	insinto /usr/share/${PN}
 	doins -r cherrypy data lazylibrarian lib mako LazyLibrarian.py version.txt
-	fowners ${PN}:${PN} /usr/share/${PN}/version.txt
+	fowners download:download /usr/share/${PN}/version.txt
 }
 
 pkg_postinst() {
@@ -71,7 +71,7 @@ pkg_postinst() {
 
 	elog "LazyLibrarian has been installed with data directories in /var/${PN}"
 	elog
-	elog "New user/group ${PN}/${PN} has been created"
+	elog "New user/group download/download has been created"
 	elog
 	elog "Config file is located in /etc/${PN}/${PN}.ini"
 	elog
@@ -79,7 +79,7 @@ pkg_postinst() {
 	elog
 	elog "Start with ${ROOT}etc/init.d/${PN} start"
 	elog "Visit http://<host ip>:8181 to configure LazyLibrarian"
-	elog "Default web username/password : lazylibrarian/secret"
+	elog "Default web username/password : download/secret"
 	elog
 }
 

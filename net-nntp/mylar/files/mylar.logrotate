@@ -4,6 +4,6 @@
 
 /var/log/mylar/*.log{
         missingok
-        su mylar mylar
+        su download download
 }
 

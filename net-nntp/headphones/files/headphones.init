@@ -39,7 +39,7 @@ start() {
         ebegin "Starting Headphones"
         start-stop-daemon --start --pidfile ${pidfile} -u ${USER} -g ${GROUP}\
 	--exec ${bin} ${program} -- \
-	-d --pidfile ${pidfile} --datadir ${var_dir} --nolaunch --config ${CONFIG_FILE} --port ${PORT}
+	-d --pidfile ${pidfile} --datadir ${var_dir} --nolaunch --config ${CONFIG_FILE} --host ${HOST} --port ${PORT}
         eend $?
 }
 
