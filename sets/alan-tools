@@ -21,7 +21,6 @@ app-portage/elogv
 app-portage/euses
 app-portage/genlop
 app-portage/gentoolkit
-app-portage/layman
 app-shells/gentoo-bashcomp
 app-text/tree
 dev-libs/elfutils
