@@ -31,7 +31,7 @@ dev-util/strace
 dev-vcs/git
 media-sound/alsa-tools
 net-analyzer/iftop
-net-analyzer/netcat6
+net-analyzer/netcat
 net-analyzer/nettop
 net-analyzer/nmap
 net-analyzer/tcpdump
