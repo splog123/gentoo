@@ -1,6 +1,5 @@
 net-nntp/sabnzbd
 net-nntp/radarr
-net-nntp/medusa
 net-nntp/headphones
 net-nntp/lazylibrarian
 net-nntp/mylar
@@ -11,6 +10,9 @@ net-misc/minidlna
 media-sound/mpc
 media-sound/mpd
 net-libs/libupnp:0
+
+# Can get this one to work nicely. It's installed manually
+#net-nntp/medusa
 
 # Replaced by net-nntp/radarr
 #net-nntp/couchpotato
