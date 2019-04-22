@@ -1,13 +1,18 @@
-net-misc/minidlna
-net-nntp/couchpotato
+net-nntp/sabnzbd
+net-nntp/radarr
+net-nntp/medusa
 net-nntp/headphones
 net-nntp/lazylibrarian
 net-nntp/mylar
-net-nntp/sabnzbd
-net-nntp/sickrage
 net-p2p/transmission
+net-misc/minidlna
 
-# mpd neds this specific slot of libupnp
+# mpd needs this specific slot of libupnp
 media-sound/mpc
 media-sound/mpd
 net-libs/libupnp:0
+
+# Replaced by net-nntp/radarr
+#net-nntp/couchpotato
+# Replaced by net-nntp/medusa
+#net-nntp/sickrage
