@@ -8,7 +8,6 @@ app-arch/cpio
 app-arch/sharutils
 app-crypt/openssl-blacklist
 app-crypt/openvpn-blacklist
-app-doc/mysql-refman
 app-editors/nano
 app-editors/vim
 app-misc/colordiff
